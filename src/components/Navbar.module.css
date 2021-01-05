@@ -1,0 +1,13 @@
+.nav {
+    grid-area: n;
+    background-color: rgb(31, 182, 68);
+    padding: 10px;
+  }
+
+  .item {
+      color: blanchedalmond;
+  }
+
+  .item.active {
+      color: blue;
+  }
