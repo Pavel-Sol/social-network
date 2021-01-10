@@ -13,6 +13,13 @@
   grid-template-areas: 
   'h h ' 'n c ';
 }
+
+.app-wrapper-content {
+  grid-area: c;
+  background-color: rgb(24, 94, 224);
+  padding: 10px;
+}
+
 /* -------------------------------- */
 /* .header {
   grid-area: h;
