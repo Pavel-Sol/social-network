@@ -9,10 +9,8 @@ function MyPosts() {
                 <button> Add post</button>
             </div>
             <div className={s.posts}>
-                <Post />
-                <Post />
-                <Post />
-                <Post />
+                <Post message='hi, how are you' likeCount='22' />
+                <Post message='hi, check my new photo' likeCount='3' />
             </div>
         </div>
     )
