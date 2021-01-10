@@ -1,4 +1,5 @@
 import s from './Profile.module.css'
+import MyPosts from './MyPosts/MyPosts'
 
 function Profile() {
     return (
@@ -7,7 +8,7 @@ function Profile() {
                 <img src='https://ackor.ru/upload/medialibrary/39b/39b572253891761721718b5bbd0efe52.PNG' />
             </div>
             <div> ava + desc</div>
-            <div> My posts
+            {/* <div> My posts
            <div>
                     New post
            </div>
@@ -19,7 +20,9 @@ function Profile() {
                         post № 2
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <MyPosts />
 
         </div>
     )
