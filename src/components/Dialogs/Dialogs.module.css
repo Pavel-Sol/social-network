@@ -1,0 +1,8 @@
+.dialogsWrap {
+    display: flex;
+
+}
+
+.dialogsNames {
+    flex: 0 1 200px
+}
