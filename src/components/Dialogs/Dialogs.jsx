@@ -2,11 +2,7 @@ import { NavLink } from 'react-router-dom'
 import s from './Dialogs.module.css'
 
 
-// let dataName = [
-//     { id: 1, name: 'Victor' },
-//     { id: 2, name: 'Sergeyr' },
-//     { id: 3, name: 'Marina' }
-// ]
+
 
 function DialogName(props) {
     let path = '/dialogs/' + props.id
@@ -20,25 +16,38 @@ function DialogName(props) {
 function Message(props) {
     return (
         <div className={s.message}>
-            {props.textMessage}
+            {props.text}
         </div>
     )
 }
 
 function Dialogs() {
+
+    let dataName = [
+        { id: 1, name: 'Victor' },
+        { id: 2, name: 'Sergeyr' },
+        { id: 3, name: 'Marina' }
+    ]
+
+    let dataMessage = [
+        { id: 1, text: 'hello' },
+        { id: 2, text: 'How are you' },
+        { id: 3, text: 'yo' }
+    ]
     return (
         <div className={s.dialogsWrap}>
             <div className={s.dialogsNames}>
 
-                <DialogName name='Victor' id='1' />
-                <DialogName name='Sergeyr' id='2' />
-                <DialogName name='Marina' id='3' />
+                <DialogName name={dataName[0].name} id={dataName[0].id} />
+                <DialogName name={dataName[1].name} id={dataName[1].id} />
+                <DialogName name={dataName[2].name} id={dataName[2].id} />
 
             </div>
             <div className={s.messages}>
 
-                <Message textMessage='Hi, how are you' />
-                <Message textMessage='What is your name' />
+                <Message text={dataMessage[0].text} />
+                <Message text={dataMessage[1].text} />
+                <Message text={dataMessage[2].text} />
 
             </div>
         </div>

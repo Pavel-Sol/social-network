@@ -21,7 +21,7 @@ function App() {
         <Header />
         <Navbar />
         <div className= 'app-wrapper-content'>
-          <Route exact path='/dialogs' component={Dialogs}></Route>
+          <Route path='/dialogs' component={Dialogs}></Route>
           <Route path='/profile' component={Profile}></Route>
           <Route path='/news' component={News}></Route>
           <Route path='/musik' component={Musik}></Route>
