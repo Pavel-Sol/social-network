@@ -37,18 +37,14 @@ function Dialogs() {
     return (
         <div className={s.dialogsWrap}>
             <div className={s.dialogsNames}>
-
-                <DialogName name={dataName[0].name} id={dataName[0].id} />
-                <DialogName name={dataName[1].name} id={dataName[1].id} />
-                <DialogName name={dataName[2].name} id={dataName[2].id} />
-
+                {dataName.map(item => {
+                    return <DialogName name={item.name} id={item.id} />
+                })}
             </div>
             <div className={s.messages}>
-
-                <Message text={dataMessage[0].text} />
-                <Message text={dataMessage[1].text} />
-                <Message text={dataMessage[2].text} />
-
+                {dataMessage.map(item => {
+                    return <Message text={item.text} />
+                })}
             </div>
         </div>
     )

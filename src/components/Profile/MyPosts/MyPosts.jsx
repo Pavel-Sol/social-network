@@ -19,8 +19,9 @@ function MyPosts() {
                 </div>
             </div>
             <div className={s.posts}>
-                <Post message={dataPost[0].message} likeCount={dataPost[0].likesCount} />
-                <Post message={dataPost[1].message} likeCount={dataPost[1].likesCount} />
+                {dataPost.map(item => {
+                    return <Post message={item.message} likeCount={item.likesCount} />
+                })}
             </div>
         </div>
     )
