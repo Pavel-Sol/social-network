@@ -19,6 +19,7 @@ function MyPosts() {
                 </div>
             </div>
             <div className={s.posts}>
+
                 {dataPost.map(item => {
                     return <Post message={item.message} likeCount={item.likesCount} />
                 })}
