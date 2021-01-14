@@ -1,12 +1,9 @@
 import s from './MyPosts.module.css'
 import Post from './Post/Post'
 
-function MyPosts() {
+function MyPosts(props) {
+    let dataPost = props.dataPost
 
-    let dataPost = [
-        { id: 1, message: 'hi, how are you', likesCount: 7 },
-        { id: 2, message: 'hi, check my new photo', likesCount: 1 },
-    ]
     return (
         <div className={s.postsBlock}>
             <div>
@@ -19,7 +16,6 @@ function MyPosts() {
                 </div>
             </div>
             <div className={s.posts}>
-
                 {dataPost.map(item => {
                     return <Post message={item.message} likeCount={item.likesCount} />
                 })}

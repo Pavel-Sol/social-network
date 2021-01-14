@@ -3,19 +3,10 @@ import DialogName from './DialogName/DialogName'
 import Message from './Message/Message'
 
 
-function Dialogs() {
+function Dialogs(props) {
+    let dataName = props.dataName
+    let dataMessage = props.dataMessage
 
-    let dataName = [
-        { id: 1, name: 'Victor' },
-        { id: 2, name: 'Sergeyr' },
-        { id: 3, name: 'Marina' }
-    ]
-
-    let dataMessage = [
-        { id: 1, text: 'hello' },
-        { id: 2, text: 'How are you' },
-        { id: 3, text: 'yo' }
-    ]
     return (
         <div className={s.dialogsWrap}>
             <div className={s.dialogsNames}>
