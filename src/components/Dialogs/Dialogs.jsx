@@ -4,8 +4,8 @@ import Message from './Message/Message'
 
 
 function Dialogs(props) {
-    let dataName = props.dataName
-    let dataMessage = props.dataMessage
+    let dataName = props.state.dataName
+    let dataMessage = props.state.dataMessage
 
     return (
         <div className={s.dialogsWrap}>
