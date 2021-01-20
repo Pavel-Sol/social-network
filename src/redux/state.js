@@ -20,4 +20,16 @@ let state = {
     }
 }
 
+export let addPost = (postMessage) => {
+
+  let newPost = {
+    id: 5,
+    message: postMessage,
+    likesCount: 0
+  }
+ 
+  state.profilePage.dataPost.push(newPost)
+}
+
+
 export default state
