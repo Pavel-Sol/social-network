@@ -5,7 +5,8 @@ let state = {
         dataPost : [
             { id: 1, message: 'hi, how are you', likesCount: 7 },
             { id: 2, message: 'hi, check my new photo', likesCount: 1 },
-          ]
+          ],
+          newPostText : 'some text'
     },
     dialogPage: {
         dataName : [
@@ -22,17 +23,23 @@ let state = {
     }
 }
 
-export let addPost = (postMessage) => {
+window.state = state
 
+export let addPost = () => {
   let newPost = {
     id: 5,
-    message: postMessage,
+    message: state.profilePage.newPostText,
     likesCount: 0
   }
  
   state.profilePage.dataPost.push(newPost)
+  state.profilePage.newPostText = ''
   rerenderEntireTree(state)
 }
 
+export let updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText
+  rerenderEntireTree(state)
+}  
 
 export default state
