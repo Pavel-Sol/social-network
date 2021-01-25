@@ -4,6 +4,7 @@ import Post from './Post/Post'
 import { addPostActionCreator, updateNewPostText } from './../../../redux/state'
 
 
+
 function MyPosts(props) {
     let dataPost = props.dataPost
     let newPostElement = React.createRef()
