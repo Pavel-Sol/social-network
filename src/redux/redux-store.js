@@ -4,12 +4,12 @@ import profileReducer from './profile-reducer'
 
 
 
-let reduses = combineReducers({
+let reducers = combineReducers({
    profilePage: profileReducer,
    dialogPage: dialogReducer
 })
 
-let store = createStore(reduses)
+let store = createStore(reducers)
 
 
 
