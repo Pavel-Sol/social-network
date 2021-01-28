@@ -16,19 +16,17 @@ import Settings from './components/Settings/Settings'
 
 function App(props) {
   return ( 
-    <Router>
-      <div className= 'app-wrapper' >
-        <Header />
-        <Navbar />
-        <div className= 'app-wrapper-content'>
-          <Route path='/dialogs' render={() => <DialogsContainer store ={props.store}/>}></Route>
-          <Route path='/profile' render={() => <Profile store ={props.store}/>}></Route>
-          <Route path='/news' component={News}></Route>
-          <Route path='/musik' component={Musik}></Route>
-          <Route path='/settings' component={Settings}></Route>
-        </div>
+    <div className= 'app-wrapper' >
+      <Header />
+      <Navbar />
+      <div className= 'app-wrapper-content'>
+        <Route path='/dialogs' render={() => <DialogsContainer />}></Route>
+        <Route path='/profile' render={() => <Profile />}></Route>
+        <Route path='/news' component={News}></Route>
+        <Route path='/musik' component={Musik}></Route>
+        <Route path='/settings' component={Settings}></Route>
+      </div>
     </div>
-   </Router>
   );
 }
 
