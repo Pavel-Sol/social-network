@@ -3,3 +3,17 @@ li img {
    height: 50px;
    border-radius: 50%;
 }
+.control {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 900px;
+}
+.control span {
+   cursor: pointer;
+   font-size: 18px;
+   margin: 3px;
+}
+
+.selected {
+   font-weight: bold;
+}
