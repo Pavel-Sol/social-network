@@ -43,7 +43,7 @@ const usersReduser = (state = initalState, action) => {
          case SET_USERS: 
          return{
             ...state,
-            users: [...action.users]
+            users: action.users
          }
 
          case SET_CURENT_PAGE: 
