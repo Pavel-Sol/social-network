@@ -72,42 +72,42 @@ const usersReduser = (state = initalState, action) => {
    }
 }
 
-export let followAC = (userId) => {
+export let follow = (userId) => {
    return {
       type: FOLLOW,
       userId
    }
 }
 
-export let unFollowAC = (userId) => {
+export let unFollow = (userId) => {
    return {
       type: UNFOLLOW,
       userId
    }
 }
 
-export let setUsersAC = (users) => {
+export let setUsers = (users) => {
    return {
       type: SET_USERS,
       users
    }
 }
 
-export let setTotalUserCountAC = (totalUserCount) => {
+export let setTotalUserCount = (totalUserCount) => {
    return {
       type: SET_TOTAL_USER_COUNT,
       totalUserCount
    }
 }
 
-export let setCurentPageAC = (curentPage) => {
+export let setCurentPage = (curentPage) => {
    return {
       type: SET_CURENT_PAGE,
       curentPage
    }
 }
 
-export let toggleIsFetchingAC = (isFetching) => {
+export let toggleIsFetching = (isFetching) => {
    return {
       type: TOGGLE_IS_FETCHING,
       isFetching
