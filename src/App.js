@@ -23,7 +23,7 @@ function App(props) {
       <div className= 'app-wrapper-content'>
         <Route path='/dialogs' render={() => <DialogsContainer />}></Route>
         <Route path='/users' render={() => <UsersContainer />}></Route>
-        <Route path='/profile' render={() => <ProfileContainer />}></Route>
+        <Route path='/profile/:userId?' render={() => <ProfileContainer />}></Route>
         <Route path='/news' component={News}></Route>
         <Route path='/musik' component={Musik}></Route>
         <Route path='/settings' component={Settings}></Route>
