@@ -1,9 +1,19 @@
 .header {
-    grid-area: h;
-    background-color: blueviolet;
-  }
-  
-  .header img {
-    width: 70px;
-    height: 70px;
-  }
+  grid-area: h;
+  background-color: blueviolet;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 70px;
+  height: 70px;
+}
+
+.login a {
+  color: bisque;
+  font-size: 20px;
+  font-weight: bold;
+}
