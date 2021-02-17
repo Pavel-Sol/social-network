@@ -19,7 +19,6 @@ function ProfileInfo(props) {
             </div>
             <h4>{props.profile.fullName}</h4>
             <h4>{`Обо мне: ${props.profile.aboutMe}`}</h4>
-            <h4>{`ПОИСК РАБОТЫ: ${props.profile.lookingForAJobDescription}`}</h4>
             <hr />
         </div>
     )
