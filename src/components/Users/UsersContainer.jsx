@@ -10,7 +10,9 @@ import Preloader from './../common/Preloader/Preloader'
 class UsersContainer extends React.Component {
    componentDidMount() {
       this.props.toggleIsFetching(true)
-      axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.pageSize}&page=${this.props.curentPage}`)
+      axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.pageSize}&page=${this.props.curentPage}`,
+         { withCredentials: true }
+      )
          .then((response) => {
             this.props.toggleIsFetching(false)
             this.props.setUsers(response.data.items)
@@ -23,7 +25,9 @@ class UsersContainer extends React.Component {
       this.props.toggleIsFetching(true)
       this.props.setCurentPage(pageNumber)
 
-      axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.pageSize}&page=${pageNumber}`)
+      axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.pageSize}&page=${pageNumber}`,
+         { withCredentials: true }
+      )
          .then((response) => {
             this.props.toggleIsFetching(false)
             this.props.setUsers(response.data.items)
