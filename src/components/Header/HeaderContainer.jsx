@@ -12,6 +12,7 @@ class HeaderContainer extends React.Component {
       axios.get('https://social-network.samuraijs.com/api/1.0/auth/me', {
          withCredentials: true
       }).then((respons) => {
+
          if (respons.data.resultCode === 0) {
             let { id, email, login } = respons.data.data
             this.props.setAuthUserData(id, email, login)
