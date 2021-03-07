@@ -14,6 +14,7 @@ import News from './components/News/News'
 import Musik from './components/Musik/Musik'
 import Settings from './components/Settings/Settings'
 import UsersContainer from './components/Users/UsersContainer'
+import Login from './components/Login/Login'
 
 function App(props) {
   return ( 
@@ -27,6 +28,7 @@ function App(props) {
         <Route path='/news' component={News}></Route>
         <Route path='/musik' component={Musik}></Route>
         <Route path='/settings' component={Settings}></Route>
+        <Route path='/login' component={Login}></Route>
       </div>
     </div>
   );
