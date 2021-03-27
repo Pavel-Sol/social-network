@@ -10,13 +10,14 @@ class ProfileStatus extends React.Component {
       this.setState({
          editMode: true
       })
-      this.props.updateUserStatus(this.state.status)
    }
 
    deactivateEditMode() {
+     
       this.setState({
          editMode: false
       })
+      this.props.updateUserStatus(this.state.status)
    }
 
    onStatusChange = (e) => {
@@ -34,7 +35,7 @@ class ProfileStatus extends React.Component {
    }
 
    render() {
-      console.log(this.props)
+      // console.log(this.props)
       return (
          <React.Fragment>
             {
